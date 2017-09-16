@@ -1,0 +1,73 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.lab1.MainActivity$CyclicAlgoFragment">
+    <RelativeLayout
+        android:id="@+id/fca_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/task_cyclic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cyclic"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:scaleType="fitXY"  />
+
+        <LinearLayout
+            android:id="@+id/input_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/task_cyclic"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/type_n"
+                android:labelFor="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_n"
+                android:textSize="36sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/n" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/calc_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_n"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:id="@+id/calculate_button"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculate_button"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/y"
+            android:layout_marginTop="100dp"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+</ScrollView>

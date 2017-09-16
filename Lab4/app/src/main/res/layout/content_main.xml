@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.example.roadischosen.lab4.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/title"
+            app:layout_constraintHorizontal_bias="0.2" />
+
+        <TextView
+            android:id="@+id/type_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@+id/input_a"
+            app:layout_constraintLeft_toLeftOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:text="@string/type_a"/>
+        <EditText
+            android:id="@+id/input_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="-2"
+            android:ems="5"
+            app:layout_constraintLeft_toRightOf="@+id/type_a"
+            app:layout_constraintBaseline_toBaselineOf="@+id/type_a"
+            />
+
+        <TextView android:id="@+id/type_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@+id/input_b"
+            app:layout_constraintRight_toLeftOf="@+id/input_b"
+            app:layout_constraintTop_toBottomOf="@+id/type_a"
+            android:text="@string/type_b"/>
+        <EditText android:id="@+id/input_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="2"
+            android:ems="5"
+            app:layout_constraintLeft_toLeftOf="@+id/input_a"
+            app:layout_constraintTop_toBottomOf="@+id/type_a"
+            app:layout_constraintBaseline_toBaselineOf="@+id/type_b"/>
+
+        <TextView android:id="@+id/type_eps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@id/input_b"
+            app:layout_constraintRight_toLeftOf="@+id/input_eps"
+            app:layout_constraintTop_toBottomOf="@+id/type_b"
+            android:text="@string/type_eps"/>
+        <EditText android:id="@+id/input_eps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="numberDecimal"
+            android:text="0.0001"
+            android:ems="5"
+            app:layout_constraintLeft_toLeftOf="@+id/input_b"
+            app:layout_constraintTop_toBottomOf="@+id/type_b"
+            app:layout_constraintBaseline_toBaselineOf="@+id/type_eps"/>
+
+        <Button
+            android:id="@+id/find_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="25sp"
+            android:onClick="okButtonClick"
+            app:layout_constraintLeft_toLeftOf="@+id/input_eps"
+            app:layout_constraintTop_toBottomOf="@+id/input_eps"/>
+
+        <TextView android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="@+id/find_button"
+            app:layout_constraintTop_toBottomOf="@+id/find_button"/>
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/graph"
+            app:layout_constraintTop_toBottomOf="@+id/result"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

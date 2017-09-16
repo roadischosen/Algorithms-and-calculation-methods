@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.roadischosen.lab3.MainActivity$InputFragment">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/input_fragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/title"
+        app:layout_constraintHorizontal_bias="0.2" />
+
+    <TextView
+        android:id="@+id/sampling_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/type_sampling"/>
+    <EditText
+        android:id="@+id/type_sampling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/sampling_input"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:text="10"
+        android:ems="5"
+        app:layout_constraintLeft_toRightOf="@id/sampling_input"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBaseline_toBaselineOf="@id/sampling_input"
+        />
+
+    <TextView
+        android:id="@+id/from_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/type_from"
+        app:layout_constraintTop_toBottomOf="@id/sampling_input"
+        android:text="@string/type_from"/>
+    <EditText
+        android:id="@+id/type_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/sampling_input"
+        android:textSize="25sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="2"
+        android:ems="5"
+        app:layout_constraintLeft_toLeftOf="@id/type_sampling"
+        app:layout_constraintTop_toBottomOf="@id/type_sampling"
+        app:layout_constraintBaseline_toBaselineOf="@id/from_input"
+        />
+
+    <TextView android:id="@+id/to_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/type_to"
+        app:layout_constraintTop_toBottomOf="@id/from_input"
+        android:text="@string/type_to"/>
+    <EditText android:id="@+id/type_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/to_input"
+        android:textSize="25sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="5"
+        android:ems="5"
+        app:layout_constraintLeft_toLeftOf="@id/type_sampling"
+        app:layout_constraintTop_toBottomOf="@id/type_from"
+        app:layout_constraintBaseline_toBaselineOf="@id/to_input"
+        />
+
+    <TextView android:id="@+id/calculate_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/sampling_input"
+        app:layout_constraintTop_toBottomOf="@id/to_input"
+        android:text="@string/calc_y_text"/>
+
+    <TextView android:id="@+id/x_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/calculate_y"
+        app:layout_constraintTop_toBottomOf="@id/calculate_y"
+        android:text="@string/type_x"/>
+    <EditText android:id="@+id/type_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/x_input"
+        android:textSize="25sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="5"
+        android:text="3"
+        app:layout_constraintLeft_toRightOf="@id/x_input"
+        app:layout_constraintBaseline_toBaselineOf="@id/x_input" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/x_input"
+        app:layout_constraintLeft_toRightOf="@id/type_x" />
+
+    <TextView android:id="@+id/res_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/calculate_y"
+        app:layout_constraintTop_toBottomOf="@id/x_input"/>
+
+    <TextView android:id="@+id/res_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/calculate_y"
+        app:layout_constraintTop_toBottomOf="@id/res_y"/>
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

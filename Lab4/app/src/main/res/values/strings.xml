@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Метод дотичних (Ньютона)</string>
+    <string name="type_a">Від:</string>
+    <string name="type_b">До:</string>
+    <string name="type_eps">ε:</string>
+    <string name="ok">OK</string>
+    <string name="equation">x^3 - x - 3</string>
+    <string name="error">Некоректні вхідні дані!</string>
+    <string name="x_eq">x = %1$.5f</string>
+    <string name="sms">Знайшов корені рівняння %1$s на проміжку [%3$.2f;%4$.2f] методом Ньютона з точністю %5$e: %2$s!</string>
+</resources>

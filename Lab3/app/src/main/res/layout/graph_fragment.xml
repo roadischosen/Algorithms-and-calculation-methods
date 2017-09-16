@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.roadischosen.lab3.MainActivity$InputFragment">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_fragment">
+
+        <TextView
+            android:id="@+id/func_graph_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/func_graph_title"
+            app:layout_constraintHorizontal_bias="0.2" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/func_graph"
+            app:layout_constraintTop_toBottomOf="@+id/func_graph_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/err_graph_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/func_graph"
+            android:text="@string/err_graph_title"
+            app:layout_constraintHorizontal_bias="0.2" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/err_graph"
+            app:layout_constraintTop_toBottomOf="@+id/err_graph_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

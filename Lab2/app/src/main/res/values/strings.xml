@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="action_settings">Settings</string>
+    <string name="perform">Згенерувати і посортувати</string>
+    <string name="generating">Генерація %1$d елементів</string>
+    <string name="done">Готово!</string>
+    <string name="wait">Зачекайте</string>
+    <string name="sorting">Сортування %1$d елементів</string>
+    <string name="theoretical">O(n²)</string>
+    <string name="practical">Шейкерне сортування</string>
+</resources>

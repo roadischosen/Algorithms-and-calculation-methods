@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="title">Інтерполяція Ньютона</string>
+    <string name="type_sampling">Розбиття:</string>
+    <string name="type_from">Від:</string>
+    <string name="type_to">До:</string>
+    <string name="calc_y_text">Інтерпольоване значення exp(-x+sin(x)):</string>
+    <string name="type_x">Введіть <i>x</i>:</string>
+    <string name="calc_butt">Обчислити</string>
+    <string name="ok">OK</string>
+    <string name="y_eq">y = %1$f</string>
+    <string name="err_eq">Похибка: %1$e</string>
+    <string name="data_title">Дані</string>
+    <string name="graphs_title">Графіки</string>
+
+    <string name="func_graph_title">Графіки функцій</string>
+    <string name="err_graph_title">Графік похибки</string>
+    <string name="real_title">exp(-x+sin(x))</string>
+    <string name="interp_title">Інтерполяція</string>
+    <string name="errors_title">Похибка</string>
+</resources>

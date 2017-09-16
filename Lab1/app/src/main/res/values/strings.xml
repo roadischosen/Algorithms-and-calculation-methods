@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab1: Алгоритми</string>
+
+    <string name="linear">Лінійний</string>
+    <string name="branching">Розгалужений</string>
+    <string name="cyclic">Циклічний</string>
+
+    <string name="type_a">Введіть a:</string>
+    <string name="type_b">Введіть b:</string>
+    <string name="type_c">Введіть c:</string>
+
+    <string name="type_k">Введіть k:</string>
+    <string name="type_d">Введіть d:</string>
+
+    <string name="type_n">Введіть n:</string>
+    <string name="gen_butt">Генерувати a i b</string>
+
+    <string name="calc_butt">Обчислити y</string>
+    <string name="y_eq">y = %1$.5f</string>
+</resources>
